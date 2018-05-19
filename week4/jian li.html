@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <style>
+        .container{
+            width: 90%; /*定义元素内容区的宽度，在内容区外面可以增加内边距、边框和外边距*/
+            min-width: 600px; /*设置元素的最小宽度*/
+            max-width: 1180px; /*设置元素的最大宽度*/
+            margin: 0 auto; /*在一个声明中设置所有外边距属性 上下边距是0.左右边距由浏览器设定*/
+            overflow: hidden; /*overflow规定当内容溢出元素框时发生的事 hidden：内容会被修剪，并且其余内容是不可见的*/
+            position: relative;
+        }
+        .personal{
+            box-sizing: border-box;/*允许以特定的方式定义匹配某个区域的特定元素 border-box：为元素设定的宽度和高度决定了元素的边框盒，即为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。*/
+            width: 30%;
+            background-color: grey;
+            color: rgb(75, 75, 75);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        .personal .header{
+            background-color: dimgrey;
+        }
+        .personal .header h1{
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            margin: 0;
+        }
+        .personal .MYphoto{
+            background-color: rgb(73, 62, 51);
+            height: 250px;
+            text-align: center;
+        }
+        .personal .MYphoto img{
+            margin-top: 25px;
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;/*向div元素添加圆角边框*/
+        }
+        .personal .self-introduce{
+            padding: 20px;/*设置p元素与边框之间的间距*/
+            font-size: 15px;
+        }
+        .self-introduce .man{
+            padding: 25px;
+			margin-left: 15%;
+        }
+        .per{
+            width: 70%;
+            margin-left: 31%;
+        }
+        .per-header{
+            overflow: hidden;
+        }
+        .per-header .per-details{
+            box-sizing: border-box;
+            width: 48%;
+            height: 550px;
+            color: rgba(189, 189, 189, 0.801);
+            float: left;
+            padding: 20px;
+            background-color: rgba(235, 16, 16, 0.596);
+            text-align: right;
+        }
+        .per-details .photo{
+            margin-top: 0;
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+        }
+        .per-details .huiliyi{
+            list-style: none;
+            margin-top: 40px;
+            text-align: left;
+            margin-left: -30px;
+        }
+        .per-header .cl{
+            box-sizing: border-box;
+            width: 48%;
+            height: 550px;
+            float: right;
+            color: rgba(189, 189, 189, 0.801);
+            background-color: rgba(137, 16, 235, 0.596);
+            padding: 20px;
+            text-align: right;
+        }
+        .cl .photo2{
+            margin-top: 0;
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+        }
+        .cl .shangshan{
+            list-style: none;
+            margin-left: -30px;
+            margin-top: 40px;
+            text-align: left;
+            text-indent: 2em;
+        }
+        .about{
+            box-sizing: border-box;
+            width: 69%;
+            height: 550px;
+            float: right;
+            text-align: right;
+            margin-top: 30px;
+            color: rgb(121, 119, 119);
+            background-color: rgb(246, 143, 69);
+        }
+        .about .photo1{
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+        }
+        .about .zixu{
+            text-align: left;
+            list-style: none;
+            text-indent: 2em;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <div class="personal">
+            <div class="header">
+                <h1>欢迎来看我的简历</h1>
+            </div>
+			<div class="MYphoto">
+				<img src="anuo.png" alt="photo">
+				<p>阿诺德施瓦辛格</p>
+			</div>
+			<div class="self-introduce">
+				<h3>自我介绍</h3>
+				<p>阿诺德·施瓦辛格，1947年7月30日生于奥地利，是美国好莱坞男演员、健美运动员、前美国加州州长、政治家，拥有美国和奥地利双重国籍。</p>
+				<p>施瓦辛格幼时练习健美，1967年20岁时获得了环球健美及奥林匹克先生头衔。1968年，到美国发展后，在大学修习工商管理，并开班授课、拍摄健美录像带。1970年进入影视圈，1984年拍摄的《终结者》塑造了阿诺冷酷的银幕形象，之后接连拍摄多部动作片。2003年竞选加州州长获得成功，跨入政坛。2011年1月3日卸任，任期达7年。卸任后的施瓦辛格重返大银幕，继续接拍电影。</p>
+				<p>2015年1月30日，曝光了施瓦辛格在《终结者:创世纪》中饰演苍老版终结者T-800的造型。</p>
+				<img class="man" src="终结者.png" alt="终结者">
+				<p>手机：***********</p>
+				<p>邮箱：*******@***.com</p>
+				<p>推特: ***********</p>
+			</div>
+		
+    </div>
+        <div class="per">
+            <div class="per-header">
+                <div class="per-details">
+                    <img class="photo" src="E:/迅雷下载/week1/绘梨衣1.png" alt="photo">
+                        <ul class="huiliyi">
+                            <li><h2>个人资料</h2></li>
+                            <li>中文名：上杉绘梨衣</li>
+                            <li>外文名：上杉絵梨衣</li>
+                            <li>生日：1991年12月25日</li>
+                            <li>年龄：21（已故）</li>
+                            <li>性别：女</li>
+                            <li>身高：172cm</li>
+                            <li>体重：47kg</li>
+                            <li>发色：暗红色</li>
+                            <li>瞳色：深玫瑰红色</li>
+                            <li>言灵：审判（111号高危言灵）</li>
+                            <li>喜欢的人：Sakura</li>
+                        </ul>
+                </div>
+                <div class="cl">
+                    <img class="photo2" src="E:/迅雷下载/week1/绘梨衣2.png"> 
+                    <ul class="shangshan">
+                        <li><h2>绘梨衣语录</h2></li>
+                        <li>我无所谓喜不喜欢，既然Sakura不喜欢，那就杀掉好了。</li>
+                        <li>我们都是小怪兽，总有一天会被正义的奥特曼杀死。</li>
+                        <li>我会很乖。</li>
+                        <li>外面的世界好大！</li>
+                        <li>没关系的，跟Sakura在外面到处玩，很开心，所以我能坚持下来。这是我一生里最自由的时间，以前没有过，以后也不会有。</li>
+                        <li>世界很温柔。</li>
+                        <li>我很喜欢这样的世界······但世界不喜欢我。</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <img class="photo1" src="E:/迅雷下载/week1/绘梨衣1.png">
+            <ul class="zixu">
+                <li><h2>关于龙族</h2></li>
+                <li><p>其实绘梨衣爱上路明非只是个美丽的错误，路明非在海底第一次看到海面上的她时，误把她看成了长江水底的诺诺，他不顾一切的向她游去并紧紧的抱住她，而这也是绘梨衣第一次被外人拥抱，第一次有外人不害怕她的力量而逃跑，第一次有男人把她当作一个普普通通的女孩，因此她沦陷了，她把自己的潜水头盔和鸭子给了路明非。</p></li>
+                <li><p>后来她跟着路明非出走，和他一起玩遍东京，和他一起去“家宴”，和他一起逃跑，即使这么做的代价是随时可能因为血统暴走而自我毁灭，可惜路明非对绘梨衣的感情只是喜欢，还没有到爱的程度。在路明非的潜意识里他和她并不是一个世界的人，所以当东京陷入毁灭的危机时，绘梨衣在Line上呼叫他，而他在跟她说烂话，他觉得黑道的公主绘梨衣就应该坐着私人飞机逃走，而自己就该躲在酒窖的深处用酒精麻醉自己，最后死在水里或者死在怪物嘴里。</p></li>
+                <li><p>路明非和绘梨衣的相遇是个错误，路明非去拥抱她是觉得她是诺诺，绘梨衣认为的路明非是外面世界来的无所不能的奇男子……文学作品有时候就是写美丽的错误，文学作品不总是为了写天造地设琴瑟和鸣而写的。换了场合相遇，也许路明非和绘梨衣就天造地设了，可没办法改变相遇的场合。</p></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

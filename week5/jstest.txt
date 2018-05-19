@@ -1,0 +1,57 @@
+ <script>
+    var a = null, 
+        b = 3, 
+        c = "abc", 
+        d = '123';
+    
+    if (b % 2 == 2) {
+        console.log('even');
+    } else {
+        console.log('odd');
+    }
+    
+    for (var i = 0; i < b; i ++) {
+        console.log("for test: " + i);
+    }
+    
+    console.log(b == 3? 'aaa' : 'bbb');
+    console.log(a, b, a == b, c, d);
+    
+    function fun() {
+        var b = 4;
+        console.log('fun test:' + b);
+        console.log("this=" + this);
+        console.log('this.name = ', this.name);
+    }
+    
+    fun();
+    
+    function A(){
+        this.name = 'hello';
+    }
+    A.prototype.fun = fun;
+    
+    var a = new A();
+    a.fun();    
+    
+   
+    var o = {a: 1, b: 2, c: [1, 2, 3]};
+    
+    console.log("object test: " + o.a + ' ' + o.b);
+    
+    var arr = [1, 'a', 2, {a: 1, b: 2}];
+    console.log(arr[0], arr[1], arr);
+    
+    function add(a) {
+        function inner(b) {
+            return a + b;
+        }
+        return inner;
+    }
+    
+    var add3 = add(3), add5 = add(5);
+    console.log(add3(4));
+    console.log(add5(6));
+    console.log(add(3)(10));
+    
+    </script>
